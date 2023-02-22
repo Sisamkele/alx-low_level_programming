@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- *times_table - print 9 times table
- * Return: Always 0
- */
-
-void times_table(void)
-{
-	times_table();
-	return (0);
+* main - check the code
+*
+* Return: Always 0.
+*/
+int main(void)
+times_table();
+return (0);
 }
