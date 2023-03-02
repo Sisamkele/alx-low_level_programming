@@ -31,3 +31,4 @@ if (i != 98 || j != 99)
 	putchar('\n');
 	return (0);
 }
+
