@@ -1,19 +1,17 @@
 #include "main.h"
+
 /**
- * _strlen_recursion - Returns the length of a string.
- * @s: The string to be measured.
+ * _pow_recursion - returns the value of x raised to the power of y
+ * @x: value to raise
+ * @y: power
  *
- * Return: The length of the string.
+ * Return: result of the power
  */
-int _strlen_recursion(char *s)
+int _pow_recursion(int x, int y)
 {
-int longit = 0;
-
-if (*s)
-{
-	longit++;
-	longit += _strlen_recursion(s + 1);
-}
-
-	return (longit);
+	if (y < 0)
+		return (-1);
+	if (y == 0)
+		return (1);
+	return (x * _pow_recursion(x, y - 1));
 }
